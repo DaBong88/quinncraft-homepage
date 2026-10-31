@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /blueprint/dl/
+Disallow: /blueprint/thanks
