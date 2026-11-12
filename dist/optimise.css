@@ -1,0 +1,41 @@
+/* Small layout and touch refinements; original Quinn styling is unchanged. */
+.blueprint-offer{padding:54px 0;background:#ebe9e0}
+.blueprint-offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center}
+.blueprint-offer .eyebrow{font-size:9px;color:var(--muted)}
+.blueprint-offer h2{font-size:clamp(36px,4vw,56px);margin-top:18px}
+.blueprint-offer .scribble{font-size:18px;margin-top:18px}
+.blueprint-offer-copy>p{font-size:14px;line-height:1.9;max-width:460px;color:var(--muted)}
+.blueprint-offer .hero-actions{margin-top:24px;gap:24px}
+.blueprint-format{font-size:8px;letter-spacing:1.2px;line-height:1.8;color:var(--muted)}
+.blueprint-offer-copy .blueprint-payment{font-size:11px;line-height:1.8;margin-top:16px;max-width:390px}
+.homepage .button{min-height:44px}
+.homepage .nav nav>a{min-height:44px;display:inline-flex;align-items:center}
+.homepage .text-link{min-height:44px;display:inline-flex;align-items:center}
+.homepage .mode-tabs button{min-height:48px}
+.homepage .feed-body{overscroll-behavior-y:contain}
+.homepage .intro{font-size:15px;line-height:1.8}
+.homepage .about p,.homepage .mode-text p{font-size:14px;line-height:1.85}
+.homepage .about-image img{max-height:580px}
+@media(min-width:641px) and (max-width:900px){.homepage .hero .intro{font-size:14px}.homepage .hero-actions{gap:12px}.homepage .button{gap:18px;padding-left:18px;padding-right:18px}.homepage .mode-panel{gap:5%}}
+@media(max-width:640px){
+.blueprint-offer{padding:40px 0}
+.blueprint-offer-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+.blueprint-offer h2{font-size:38px;margin-top:14px}
+.blueprint-offer .eyebrow{font-size:8px;letter-spacing:1.2px}
+.blueprint-offer .scribble{font-size:17px;margin-top:16px;max-width:100%}
+.blueprint-offer-copy>p{font-size:14px;line-height:1.8}
+.blueprint-offer .hero-actions{margin-top:20px;gap:20px}
+.blueprint-offer-copy .blueprint-payment{font-size:10px;margin-top:14px}
+.homepage .intro{font-size:14px;line-height:1.8}
+.homepage .menu{min-height:44px;min-width:64px}
+.homepage .hero .eyebrow{font-size:8px;letter-spacing:1px;flex-wrap:wrap}
+.homepage .photo-frame img{height:240px}
+.homepage .workspace-image img{height:220px}
+.homepage .mode-text h3{font-size:30px}
+.homepage .about p,.homepage .mode-text p{font-size:14px}
+}
+@media(max-width:360px){.homepage .photo-frame img{height:215px}.homepage .workspace-image img{height:200px}.blueprint-offer .hero-actions{gap:16px}}
+html:not(.js) .homepage .menu{display:none}
+@media(max-width:640px){html:not(.js) .homepage .nav{height:auto;min-height:82px;flex-wrap:wrap;gap:16px;padding-top:20px;padding-bottom:20px}html:not(.js) .homepage .nav nav{display:flex;position:static;flex-direction:row;flex-wrap:wrap;box-shadow:none;padding:0;font-size:11px;gap:12px}}
+/* HTML image dimensions reserve space; explicit responsive heights prevent tall desktop portraits. */
+@media(min-width:641px){.homepage .photo-frame img{height:clamp(360px,42vw,560px);aspect-ratio:auto;object-position:50% 42%}.homepage .hero{align-items:center}}

@@ -28,20 +28,38 @@
       "source": "/blueprint/dl/(.*)",
       "headers": [
         {
-          "key": "Content-Type",
-          "value": "text/markdown; charset=utf-8"
-        },
-        {
-          "key": "Content-Disposition",
-          "value": "attachment"
-        },
-        {
           "key": "X-Robots-Tag",
           "value": "noindex, nofollow"
         },
         {
           "key": "Cache-Control",
           "value": "private, no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/blueprint/dl/(.*\\.md)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Grok-Bot-Blueprint.md\""
+        }
+      ]
+    },
+    {
+      "source": "/blueprint/dl/(.*\\.pdf)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline; filename=\"Grok-Bot-Blueprint.pdf\""
         }
       ]
     },
